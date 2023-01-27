@@ -1,13 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @apply bg-gradient-to-r from-teal-700 to-amber-700;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.operator {
+  @apply bg-green-500 w-[50px] h-[50px] rounded-full hover:bg-green-300 focus:bg-white focus:shadow-md font-bold focus:shadow-black transition-colors duration-500;
+}
+.numbers {
+  @apply rounded-full transition-colors duration-300 bg-blue-600 text-white font-bold hover:bg-blue-500 w-[50px] h-[50px];
+}
+.dot {
+  @apply rounded-full bg-red-900 text-white hover:bg-red-600 font-bold transition-colors duration-300 w-[50px] h-[50px];
+}
+.viceVersa {
+  @apply rounded-full bg-white hover:bg-black hover:text-white transition-colors duration-300 font-bold w-[50px] h-[50px];
+}
+.equal {
+  @apply rounded-full bg-black text-white hover:bg-white hover:text-black font-bold transition-colors duration-300 w-[50px] h-[50px];
+}
+.cleaners {
+  @apply rounded-full bg-white hover:bg-gray-900 hover:text-white transition-colors duration-300 font-bold w-[50px] h-[50px];
 }
